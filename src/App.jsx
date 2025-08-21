@@ -1,6 +1,5 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
-import { HashRouter } from 'react-router-dom'
 import Collection from './pages/Collection'
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -26,7 +25,7 @@ const App = () => {
       <div className="sm:hidden px-4 py-2 shadow-md bg-white top-[60px] z-40">
         <SearchBar className="w-full" />
       </div>
-      <HashRouter >
+      
       <Routes>
         <Route path='/' element ={<Home/>}/>
         <Route path='/collection' element={<Collection/>}/>
@@ -39,7 +38,7 @@ const App = () => {
         <Route path='/place-order' element={<PlaceOrder/>}/>
         <Route path='/orders' element={<Orders/>} />
       </Routes>
-      </HashRouter>
+      
       <Footer/>
     </div>
   )
